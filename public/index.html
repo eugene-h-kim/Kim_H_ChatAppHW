@@ -12,7 +12,46 @@
    <div class="main">
       <div class="name">
          <span><i class="fa-solid fa-user"></i></span>
+         <input 
+            type="text" 
+            id="name-input" 
+            class="name-input" 
+            value="Input your nickname here:" 
+            maxlength="20">
       </div>
+
+      <ul class="message-container" id="message-container">
+         <li class="message-left">
+            <p class="message">
+               Lorem ipsum
+               <span>bluebird ● 17 February 02:46</span>
+            </p>
+         </li>
+
+         <li class="message-right">
+            <p class="message">
+               Lorem ipsum
+               <span>bluebird ● 17 February 02:46</span>
+            </p>
+         </li>
+
+         <li class="message-feedback">
+            <p class="feedback" id="feedback">
+               killer is typing a message
+            </p>
+         </li>
+      </ul>
+
+      <form action="" class="message-form" id="message-form">
+         <input type="text" name="message" id="message-input" class="message-input">
+         <div class="v-divider"></div>
+         <button type="submit" class="send-button">
+            send <span><i class="fa-solid fa-paper-plane"></i></span>
+         </button>
+      </form>
+
+      <h3 class="clients-total" id="client-total">Total clients: 2</h3>
+
    </div>
 
    <script src="https://kit.fontawesome.com/7d987b1945.js" crossorigin="anonymous"></script>
