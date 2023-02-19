@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="/public/css/main.css">
+   <link rel="stylesheet" href="main.css">
    <title>Chat App</title>
 </head>
 <body>
@@ -13,12 +13,12 @@
    <div class="main">
       <div class="name">
          <span><i class="fa-solid fa-user"></i></span>
-         <input 
+         <input
             type="text" 
             id="name-input" 
             class="name-input" 
-            value="Input your nickname here:" 
-            maxlength="20">
+            maxlength="20"
+            placeholder="Nickname?">
       </div>
 
       <ul class="message-container" id="message-container">
@@ -55,7 +55,9 @@
 
    </div>
 
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
    <script src="https://kit.fontawesome.com/7d987b1945.js" crossorigin="anonymous"></script>
-   <script src="public/js/main.js"></script>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="main.js"></script>
 </body>
 </html>
